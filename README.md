@@ -1,4 +1,4 @@
-# Welcome to the Vention Front End interview!
+# Welcome to the Vention Front End Interview!
 The goal of this test is to create some interactive cards using HTML, CSS/SCSS, and JavaScript.
 
 ## Rules
