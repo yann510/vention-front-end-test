@@ -3,7 +3,7 @@ The goal of this test is to create some interactive cards using HTML, CSS/SCSS, 
 
 ## Rules
 - No frameworks. Vanilla JS and CSS/SCSS only (no Bootstrap).
-- The display for the cards should be responsive.
+- The layout for the cards should be responsive.
 - Provide access to your code, e.g. link to a GitHub repo.
 - **Important**: The cards must be generated dynamically, i.e. data is stored in JS, not just a static list of HTML elements.
 - That’s it!
