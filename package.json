@@ -1,0 +1,28 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "global project dependencies",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "start": "concurrently \"npm:start-*\"",
+    "start-postgres": "docker-compose up",
+    "start-webapp": "npm run --prefix ./src/webapp start",
+    "start-api": "npm run --prefix ./src/api start:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yann510/vention-front-end-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yann510/vention-front-end-test/issues"
+  },
+  "homepage": "https://github.com/yann510/vention-front-end-test#readme"
+}

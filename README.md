@@ -1,3 +1,19 @@
+# Prerequisites
+- Docker
+- Node
+- npm
+
+# Starting the whole stack
+`npm start`
+
+# Things to take into consideration
+- Security has not been the focus in this exercise, thus it has been neglected on purpose.
+- There is no concept of users so this application has been built with a single user in mind
+
+
+
+
+
 # Welcome to the Vention Interview!
 The goal of this test is to create some interactive cards using HTML, CSS/SCSS, and JavaScript.
 

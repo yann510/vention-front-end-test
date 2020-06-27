@@ -1,0 +1,41 @@
+.app {
+
+}
+
+.content-container {
+    max-width: 1000px;
+    justify-content: center;
+    margin: 24px auto;
+}
+
+@media (max-width: 1050px) {
+    .content-container {
+        margin: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-container {
+        margin: 8px;
+    }
+}
+
+.app-bar {
+    color: white;
+    background-color: #1986d2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.app-bar span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.app-bar-container {
+    width: 100%;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+}
