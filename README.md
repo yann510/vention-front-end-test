@@ -4,7 +4,8 @@
 - npm
 
 # Starting the whole stack
-`npm start`
+`npm start` 
+This will open a browser tab with the webapp, you will to wait until all containers are properly started for it to work.
 
 # Things to take into consideration
 - Security has not been the focus in this exercise, thus it has been neglected on purpose.

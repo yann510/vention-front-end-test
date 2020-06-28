@@ -3,17 +3,13 @@
   "version": "1.0.0",
   "description": "global project dependencies",
   "main": "index.js",
-  "dependencies": {
-    "concurrently": "^5.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "open-cli": "^6.0.1",
     "prettier": "^2.0.5"
   },
   "scripts": {
-    "start": "concurrently \"npm:start-*\"",
-    "start-postgres": "docker-compose up",
-    "start-webapp": "npm run --prefix ./src/webapp start",
-    "start-api": "npm run --prefix ./src/api start:dev"
+    "start": "npm i && docker-compose up -d && open-cli http://localhost"
   },
   "repository": {
     "type": "git",
