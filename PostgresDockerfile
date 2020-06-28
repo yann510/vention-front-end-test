@@ -1,3 +1,6 @@
-FROM postgres
+FROM postgres:latest
 
 COPY ./docker-entrypoint-initdb.d /docker-entrypoint-initdb.d/
+COPY ./postgres.conf ./
+
+EXPOSE 5432

@@ -7,10 +7,38 @@ services:
       build:
         context: .
         dockerfile: ./PostgresDockerfile
+      command:
+        - "postgres"
+        - "-c"
+        - "listen_addresses=*"
       environment:
           POSTGRES_DB: "vention"
           POSTGRES_HOST_AUTH_METHOD: "trust" # Not recommended, only for demo purposes
       volumes:
           - ./database:/var/lib/postgresql
+      networks:
+        - vention
       ports:
           - "5432:5432"
+  webapp:
+    container_name: webapp
+    build:
+      context: .
+      dockerfile: ./src/webapp/Dockerfile
+    networks:
+      - vention
+    ports:
+      - "80:80"
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: ./src/api/Dockerfile
+    networks:
+      - vention
+    ports:
+      - "9090:9090"
+
+networks:
+  vention:
+    driver: bridge
