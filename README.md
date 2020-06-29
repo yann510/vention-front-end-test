@@ -5,7 +5,7 @@
 
 # Starting the whole stack
 `npm start` 
-This will open a browser tab with the webapp, you will to wait until all containers are properly started for it to work.
+If you don't see any flowers on the browser tab that will launch with this command, try refreshing when all containers are started properly.
 
 # Things to take into consideration
 - Security has not been the focus in this exercise, thus it has been neglected on purpose.

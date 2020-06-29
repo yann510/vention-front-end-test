@@ -5,11 +5,12 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "delay-cli": "^1.1.0",
     "open-cli": "^6.0.1",
     "prettier": "^2.0.5"
   },
   "scripts": {
-    "start": "npm i && docker-compose up -d && open-cli http://localhost"
+    "start": "npm i && docker-compose up -d && delay 10 && open-cli http://localhost"
   },
   "repository": {
     "type": "git",
